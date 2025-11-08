@@ -1,4 +1,4 @@
-## May's-SchoolProjects!
+# May's Home Lab Projects
 
-Welcome to my project portfolio!  
-This repository documents my IT projects where I practice different aspects of IT skills.
+Welcome to my home lab portfolio!  
+This repository documents my self-directed IT projects where I practice system installation, networking, troubleshooting, and server management.
