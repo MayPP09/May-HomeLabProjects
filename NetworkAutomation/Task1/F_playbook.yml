@@ -1,0 +1,8 @@
+---
+- name: Add a user on Switch
+  hosts: Access_Closet_1
+  gather_facts: no
+  tasks:
+    - name: Create user account on switch
+      community.network.exos_config:
+        lines: create account admin Local-Admin WGU123

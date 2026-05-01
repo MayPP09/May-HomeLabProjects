@@ -1,0 +1,281 @@
+Switch IP: 10.10.1.24
+
+SysName:          User_Network
+SysLocation:      
+SysContact:       https://www.extremenetworks.com/support/
+System MAC:       0C:FD:94:C2:00:00
+System Type:      EXOS-VM
+
+SysHealth check:  Enabled (Normal)
+Recovery Mode:    All
+System Watchdog:  Enabled
+
+Current Time:     Mon Apr 27 21:39:30 2026
+Timezone:         [Auto DST Disabled] GMT Offset: 0 minutes, name is UTC.
+Boot Time:        Mon Apr 27 20:07:18 2026
+Boot Count:       15
+Next Reboot:      None scheduled
+System UpTime:    1 hour 32 minutes 12 seconds
+
+Current State:    OPERATIONAL             
+Image Selected:   primary                 
+Image Booted:     primary                 
+Primary ver:      32.7.2.19               
+Secondary ver:    32.7.2.19   
+
+Config Selected:  primary.cfg                                          
+Config Booted:    primary.cfg                                          
+Config Automatic: NONE (Disabled)
+
+primary.cfg       Created by ExtremeXOS version 32.7.2.19
+                  225676 bytes saved on Mon Apr 27 21:02:15 2026
+
+
+LAA MAC:          Locally Administered MAC Address Disabled
+--- Configuration Data ---
+
+#
+# Module devmgr configuration.
+#
+configure snmp sysName "User_Network"
+
+#
+# Module vlan configuration.
+#
+create qosprofile "QP2"
+create qosprofile "QP3"
+create qosprofile "QP4"
+create qosprofile "QP5"
+create qosprofile "QP6"
+create qosprofile "QP7"
+configure vlan Default ipaddress 10.10.1.24 255.255.255.0
+configure vlan Mgmt ipaddress 10.10.1.8 255.255.255.0
+configure qosscheduler strict-priority ports 1 
+configure qosscheduler strict-priority ports 2 
+configure qosscheduler strict-priority ports 3 
+configure qosscheduler strict-priority ports 4 
+configure qosscheduler strict-priority ports 5 
+configure qosscheduler strict-priority ports 6 
+configure qosscheduler strict-priority ports 7 
+configure qosscheduler strict-priority ports 8 
+configure qosscheduler strict-priority ports 9 
+configure qosscheduler strict-priority ports 10 
+configure qosscheduler strict-priority ports 11 
+configure qosscheduler strict-priority ports 12 
+
+#
+# Module mcmgr configuration.
+#
+
+#
+# Module otm config
+==============================
+Switch IP: 10.10.1.23
+
+SysName:          ACCT_Network
+SysLocation:      
+SysContact:       https://www.extremenetworks.com/support/
+System MAC:       0C:C7:CF:B4:00:00
+System Type:      EXOS-VM
+
+SysHealth check:  Enabled (Normal)
+Recovery Mode:    All
+System Watchdog:  Enabled
+
+Current Time:     Mon Apr 27 21:39:34 2026
+Timezone:         [Auto DST Disabled] GMT Offset: 0 minutes, name is UTC.
+Boot Time:        Mon Apr 27 20:07:18 2026
+Boot Count:       15
+Next Reboot:      None scheduled
+System UpTime:    1 hour 32 minutes 15 seconds
+
+Current State:    OPERATIONAL             
+Image Selected:   primary                 
+Image Booted:     primary                 
+Primary ver:      32.7.2.19               
+Secondary ver:    32.7.2.19   
+
+Config Selected:  primary.cfg                                          
+Config Booted:    primary.cfg                                          
+Config Automatic: NONE (Disabled)
+
+primary.cfg       Created by ExtremeXOS version 32.7.2.19
+                  225792 bytes saved on Mon Apr 27 21:03:13 2026
+
+
+LAA MAC:          Locally Administered MAC Address Disabled
+--- Configuration Data ---
+
+#
+# Module devmgr configuration.
+#
+configure snmp sysName "ACCT_Network"
+
+#
+# Module vlan configuration.
+#
+create qosprofile "QP2"
+create qosprofile "QP3"
+create qosprofile "QP4"
+create qosprofile "QP5"
+create qosprofile "QP6"
+create qosprofile "QP7"
+configure vlan Default ipaddress 10.10.1.23 255.255.255.0
+configure vlan Mgmt ipaddress 10.10.1.7 255.255.255.0
+configure qosscheduler strict-priority ports 1 
+configure qosscheduler strict-priority ports 2 
+configure qosscheduler strict-priority ports 3 
+configure qosscheduler strict-priority ports 4 
+configure qosscheduler strict-priority ports 5 
+configure qosscheduler strict-priority ports 6 
+configure qosscheduler strict-priority ports 7 
+configure qosscheduler strict-priority ports 8 
+configure qosscheduler strict-priority ports 9 
+configure qosscheduler strict-priority ports 10 
+configure qosscheduler strict-priority ports 11 
+configure qosscheduler strict-priority ports 12 
+
+#
+# Module mcmgr configuration.
+#
+
+#
+# Module otm config
+==============================
+Switch IP: 10.10.1.22
+
+SysName:          MGMT_Router
+SysLocation:      
+SysContact:       https://www.extremenetworks.com/support/
+System MAC:       0C:E4:9D:43:00:00
+System Type:      EXOS-VM
+
+SysHealth check:  Enabled (Normal)
+Recovery Mode:    All
+System Watchdog:  Enabled
+
+Current Time:     Mon Apr 27 21:39:37 2026
+Timezone:         [Auto DST Disabled] GMT Offset: 0 minutes, name is UTC.
+Boot Time:        Mon Apr 27 20:07:18 2026
+Boot Count:       15
+Next Reboot:      None scheduled
+System UpTime:    1 hour 32 minutes 19 seconds
+
+Current State:    OPERATIONAL             
+Image Selected:   primary                 
+Image Booted:     primary                 
+Primary ver:      32.7.2.19               
+Secondary ver:    32.7.2.19   
+
+Config Selected:  primary.cfg                                          
+Config Booted:    primary.cfg                                          
+Config Automatic: NONE (Disabled)
+
+primary.cfg       Created by ExtremeXOS version 32.7.2.19
+                  225791 bytes saved on Mon Apr 27 21:03:57 2026
+
+
+LAA MAC:          Locally Administered MAC Address Disabled
+--- Configuration Data ---
+
+#
+# Module devmgr configuration.
+#
+configure snmp sysName "MGMT_Router"
+
+#
+# Module vlan configuration.
+#
+create qosprofile "QP2"
+create qosprofile "QP3"
+create qosprofile "QP4"
+create qosprofile "QP5"
+create qosprofile "QP6"
+create qosprofile "QP7"
+configure vlan Default ipaddress 10.10.1.22 255.255.255.0
+configure vlan Mgmt ipaddress 10.10.1.6 255.255.255.0
+configure qosscheduler strict-priority ports 1 
+configure qosscheduler strict-priority ports 2 
+configure qosscheduler strict-priority ports 3 
+configure qosscheduler strict-priority ports 4 
+configure qosscheduler strict-priority ports 5 
+configure qosscheduler strict-priority ports 6 
+configure qosscheduler strict-priority ports 7 
+configure qosscheduler strict-priority ports 8 
+configure qosscheduler strict-priority ports 9 
+configure qosscheduler strict-priority ports 10 
+configure qosscheduler strict-priority ports 11 
+configure qosscheduler strict-priority ports 12 
+
+#
+# Module mcmgr configuration.
+#
+
+==============================
+Switch IP: 10.10.1.21
+
+SysName:          IT_Network
+SysLocation:      
+SysContact:       https://www.extremenetworks.com/support/
+System MAC:       0C:A8:92:A4:00:00
+System Type:      EXOS-VM
+
+SysHealth check:  Enabled (Normal)
+Recovery Mode:    All
+System Watchdog:  Enabled
+
+Current Time:     Mon Apr 27 21:39:42 2026
+Timezone:         [Auto DST Disabled] GMT Offset: 0 minutes, name is UTC.
+Boot Time:        Mon Apr 27 20:07:18 2026
+Boot Count:       17
+Next Reboot:      None scheduled
+System UpTime:    1 hour 32 minutes 23 seconds
+
+Current State:    OPERATIONAL             
+Image Selected:   primary                 
+Image Booted:     primary                 
+Primary ver:      32.7.2.19               
+Secondary ver:    32.7.2.19   
+
+Config Selected:  primary.cfg                                          
+Config Booted:    primary.cfg                                          
+Config Automatic: NONE (Disabled)
+
+primary.cfg       Created by ExtremeXOS version 32.7.2.19
+                  249403 bytes saved on Mon Apr 27 21:05:25 2026
+
+
+LAA MAC:          Locally Administered MAC Address Disabled
+--- Configuration Data ---
+
+#
+# Module devmgr configuration.
+#
+configure snmp sysName "IT_Network"
+configure sys-recovery-level switch reset
+
+#
+# Module vlan configuration.
+#
+configure vlan default delete ports all
+configure vr VR-Default delete ports 1-12
+configure vr VR-Default add ports 1-12
+create qosprofile "QP2"
+create qosprofile "QP3"
+create qosprofile "QP4"
+create qosprofile "QP5"
+create qosprofile "QP6"
+create qosprofile "QP7"
+configure vlan Default add ports 1-12 untagged  
+configure vlan Default ipaddress 10.10.1.21 255.255.255.0
+configure vlan Mgmt ipaddress 10.10.1.5 255.255.255.0
+configure qosscheduler strict-priority ports 1 
+configure qosscheduler strict-priority ports 2 
+configure qosscheduler strict-priority ports 3 
+configure qosscheduler strict-priority ports 4 
+configure qosscheduler strict-priority ports 5 
+configure qosscheduler strict-priority ports 6 
+configure qosscheduler strict-priority ports 7 
+configure qosscheduler strict-priority ports 8 
+configure qosscheduler strict-priority por
+==============================

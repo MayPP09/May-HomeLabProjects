@@ -1,0 +1,15 @@
+
+PLAY [Add a user on Switch] ****************************************************
+
+TASK [Create user account on switch] *******************************************
+changed: [10.10.1.24]
+changed: [10.10.1.23]
+changed: [10.10.1.22]
+changed: [10.10.1.21]
+
+PLAY RECAP *********************************************************************
+10.10.1.21                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.22                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.23                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.24                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

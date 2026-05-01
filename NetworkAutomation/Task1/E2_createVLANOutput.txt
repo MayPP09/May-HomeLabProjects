@@ -1,0 +1,76 @@
+Results for Switch 10.10.1.24:
+create vlan User_Network
+
+* User_Network.3 # configure vlan User_Network tag 10
+
+* User_Network.3 # create vlan ACCT_Network
+
+* User_Network.3 # configure vlan ACCT_Network tag 20
+
+* User_Network.3 # create vlan MGMT_Network
+
+* User_Network.3 # configure vlan MGMT_Network tag 30
+
+* User_Network.3 # create vlan IT_Network
+
+* User_Network.3 # configure vlan IT_Network tag 40
+
+* User_Network.3 # 
+
+Results for Switch 10.10.1.23:
+create vlan User_Network
+
+* ACCT_Network.3 # configure vlan User_Network tag 10
+
+* ACCT_Network.3 # create vlan ACCT_Network
+
+* ACCT_Network.3 # configure vlan ACCT_Network tag 20
+
+* ACCT_Network.3 # create vlan MGMT_Network
+
+* ACCT_Network.3 # configure vlan MGMT_Network tag 30
+
+* ACCT_Network.3 # create vlan IT_Network
+
+* ACCT_Network.3 # configure vlan IT_Network tag 40
+
+* ACCT_Network.3 # 
+
+Results for Switch 10.10.1.22:
+create vlan User_Network
+
+* MGMT_Router.3 # configure vlan User_Network tag 10
+
+* MGMT_Router.3 # create vlan ACCT_Network
+
+* MGMT_Router.3 # configure vlan ACCT_Network tag 20
+
+* MGMT_Router.3 # create vlan MGMT_Network
+
+* MGMT_Router.3 # configure vlan MGMT_Network tag 30
+
+* MGMT_Router.3 # create vlan IT_Network
+
+* MGMT_Router.3 # configure vlan IT_Network tag 40
+
+* MGMT_Router.3 # 
+
+Results for Switch 10.10.1.21:
+create vlan User_Network
+
+* IT_Network.3 # configure vlan User_Network tag 10
+
+* IT_Network.3 # create vlan ACCT_Network
+
+* IT_Network.3 # configure vlan ACCT_Network tag 20
+
+* IT_Network.3 # create vlan MGMT_Network
+
+* IT_Network.3 # configure vlan MGMT_Network tag 30
+
+* IT_Network.3 # create vlan IT_Network
+
+* IT_Network.3 # configure vlan IT_Network tag 40
+
+* IT_Network.3 # 
+
