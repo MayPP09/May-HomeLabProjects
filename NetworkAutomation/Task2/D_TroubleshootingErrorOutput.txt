@@ -1,0 +1,14 @@
+data.aws_caller_identity.current: Reading...
+aws_instance.ubuntu_server: Refreshing state... [id=i-0c8a2ef3d237c2723]
+data.aws_caller_identity.current: Read complete after 0s [id=930262561435]
+aws_instance.redhat_server: Refreshing state... [id=i-0599c0c0b607c3c02]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration and found no differences, so no changes are needed.
+
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+account_id = "930262561435"

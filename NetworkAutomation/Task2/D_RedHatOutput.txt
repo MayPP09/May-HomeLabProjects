@@ -1,0 +1,177 @@
+data.aws_caller_identity.current: Reading...
+aws_instance.ubuntu_server: Refreshing state... [id=i-0c8a2ef3d237c2723]
+data.aws_caller_identity.current: Read complete after 0s [id=930262561435]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following
+symbols:
+  + create
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # aws_instance.redhat_server will be created
+  + resource "aws_instance" "redhat_server" {
+      + ami                                  = "ami-026fc9b0dc11499dc"
+      + arn                                  = (known after apply)
+      + associate_public_ip_address          = (known after apply)
+      + availability_zone                    = (known after apply)
+      + disable_api_stop                     = (known after apply)
+      + disable_api_termination              = (known after apply)
+      + ebs_optimized                        = (known after apply)
+      + enable_primary_ipv6                  = (known after apply)
+      + force_destroy                        = false
+      + get_password_data                    = false
+      + host_id                              = (known after apply)
+      + host_resource_group_arn              = (known after apply)
+      + iam_instance_profile                 = (known after apply)
+      + id                                   = (known after apply)
+      + instance_initiated_shutdown_behavior = (known after apply)
+      + instance_lifecycle                   = (known after apply)
+      + instance_state                       = (known after apply)
+      + instance_type                        = "t2.micro"
+      + ipv6_address_count                   = (known after apply)
+      + ipv6_addresses                       = (known after apply)
+      + key_name                             = (known after apply)
+      + monitoring                           = (known after apply)
+      + outpost_arn                          = (known after apply)
+      + password_data                        = (known after apply)
+      + placement_group                      = (known after apply)
+      + placement_group_id                   = (known after apply)
+      + placement_partition_number           = (known after apply)
+      + primary_network_interface_id         = (known after apply)
+      + private_dns                          = (known after apply)
+      + private_ip                           = (known after apply)
+      + public_dns                           = (known after apply)
+      + public_ip                            = (known after apply)
+      + region                               = "us-west-2"
+      + secondary_private_ips                = (known after apply)
+      + security_groups                      = (known after apply)
+      + source_dest_check                    = true
+      + spot_instance_request_id             = (known after apply)
+      + subnet_id                            = (known after apply)
+      + tags                                 = {
+          + "Environment" = "Lab-D417"
+          + "Name"        = "Autojor-RedHat-Server-D"
+          + "Owner"       = "MayPwintPhyu_012334391"
+        }
+      + tags_all                             = {
+          + "Environment" = "Lab-D417"
+          + "Name"        = "Autojor-RedHat-Server-D"
+          + "Owner"       = "MayPwintPhyu_012334391"
+        }
+      + tenancy                              = (known after apply)
+      + user_data_base64                     = (known after apply)
+      + user_data_replace_on_change          = false
+      + vpc_security_group_ids               = (known after apply)
+
+      + capacity_reservation_specification (known after apply)
+
+      + cpu_options (known after apply)
+
+      + ebs_block_device (known after apply)
+
+      + enclave_options (known after apply)
+
+      + ephemeral_block_device (known after apply)
+
+      + instance_market_options (known after apply)
+
+      + maintenance_options (known after apply)
+
+      + metadata_options (known after apply)
+
+      + network_interface (known after apply)
+
+      + primary_network_interface (known after apply)
+
+      + private_dns_name_options (known after apply)
+
+      + root_block_device {
+          + delete_on_termination = true
+          + device_name           = (known after apply)
+          + encrypted             = (known after apply)
+          + iops                  = (known after apply)
+          + kms_key_id            = (known after apply)
+          + tags_all              = (known after apply)
+          + throughput            = (known after apply)
+          + volume_id             = (known after apply)
+          + volume_size           = 10
+          + volume_type           = "gp2"
+        }
+
+      + secondary_network_interface (known after apply)
+    }
+
+  # aws_instance.ubuntu_server will be updated in-place
+  ~ resource "aws_instance" "ubuntu_server" {
+        id                                   = "i-0c8a2ef3d237c2723"
+      ~ tags                                 = {
+            "Environment"                 = "Lab-D417"
+            "Name"                        = "Autojar-Ubuntu-Server-C"
+            "Owner"                       = "MayPwintPhyu_012334391"
+          - "ca-creator"                  = "student" -> null
+          - "ca-environment"              = "production" -> null
+          - "ca-environment-session-id"   = "2966359" -> null
+          - "ca-environment-session-uuid" = "1896d4d8-d0da-42cf-b590-3792e8fa3f5f" -> null
+          - "ca-external-account-id"      = "62e3c19e9b5d8a005e6faddc" -> null
+          - "ca-external-user-id"         = "69bc9f84a12ad90f2846db50" -> null
+          - "ca-laboratory-id"            = "3423" -> null
+          - "ca-laboratory-uuid"          = "13b9f5fb-f86c-4590-9344-ff33fb9d110d" -> null
+          - "ca-persistent"               = "false" -> null
+          - "ca-scope"                    = "lab" -> null
+        }
+      ~ tags_all                             = {
+          - "ca-creator"                  = "student" -> null
+          - "ca-environment"              = "production" -> null
+          - "ca-environment-session-id"   = "2966359" -> null
+          - "ca-environment-session-uuid" = "1896d4d8-d0da-42cf-b590-3792e8fa3f5f" -> null
+          - "ca-external-account-id"      = "62e3c19e9b5d8a005e6faddc" -> null
+          - "ca-external-user-id"         = "69bc9f84a12ad90f2846db50" -> null
+          - "ca-laboratory-id"            = "3423" -> null
+          - "ca-laboratory-uuid"          = "13b9f5fb-f86c-4590-9344-ff33fb9d110d" -> null
+          - "ca-persistent"               = "false" -> null
+          - "ca-scope"                    = "lab" -> null
+            # (3 unchanged elements hidden)
+        }
+        # (39 unchanged attributes hidden)
+
+      ~ root_block_device {
+          ~ tags                  = {
+              - "ca-creator"                  = "student" -> null
+              - "ca-environment"              = "production" -> null
+              - "ca-environment-session-id"   = "2966359" -> null
+              - "ca-environment-session-uuid" = "1896d4d8-d0da-42cf-b590-3792e8fa3f5f" -> null
+              - "ca-external-account-id"      = "62e3c19e9b5d8a005e6faddc" -> null
+              - "ca-external-user-id"         = "69bc9f84a12ad90f2846db50" -> null
+              - "ca-laboratory-id"            = "3423" -> null
+              - "ca-laboratory-uuid"          = "13b9f5fb-f86c-4590-9344-ff33fb9d110d" -> null
+              - "ca-persistent"               = "false" -> null
+              - "ca-scope"                    = "lab" -> null
+            }
+            # (10 unchanged attributes hidden)
+        }
+
+        # (8 unchanged blocks hidden)
+    }
+
+Plan: 1 to add, 1 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+aws_instance.redhat_server: Creating...
+aws_instance.ubuntu_server: Modifying... [id=i-0c8a2ef3d237c2723]
+aws_instance.redhat_server: Still creating... [00m10s elapsed]
+aws_instance.redhat_server: Still creating... [00m20s elapsed]
+aws_instance.redhat_server: Still creating... [00m30s elapsed]
+aws_instance.redhat_server: Creation complete after 32s [id=i-0599c0c0b607c3c02]
+╷
+│ Error: updating tags for EC2 (Elastic Compute Cloud) Instance (i-0c8a2ef3d237c2723): operation error EC2: DeleteTags, https response error StatusCode: 403, RequestID: fdda6625-af23-4265-a842-be1060e231b9, api error UnauthorizedOperation: You are not authorized to perform this operation. User: arn:aws:iam::930262561435:user/student is not authorized to perform: ec2:DeleteTags on resource: arn:aws:ec2:us-west-2:930262561435:instance/i-0c8a2ef3d237c2723 with an explicit deny in a service control policy: arn:aws:organizations::541994194381:policy/o-09krnc02hr/service_control_policy/p-szhkahgy. Encoded authorization failure message: i9wMEdoE6VK7Jo2NuC7W2pzcGFu7f4GajmPRs7nrkkAA3iNh97hMLIUkSt6tVi2Sc5NRQsnTJahkzJ22FZDpXRF6CMd7geOmV7dUYg1PKsqG0TJ5kA7bDPQLnsUQKXiP4XHszNKMsWijBuU389U-pOMNE7vnVDJ5b0LLRvoH7LgAoptAh8SKkoFq872QVX54tRZw3yKL3lQl5_RWCpre2AIEUh6FqNYvcgFh4DJsdEeS4SZPM3CGCR3n87ewCt39SvKDNvc5gpA8f7WAh-CZTcOLk4vS0bYd1GwTtjSG301aYPLuWNxIlH0eMRFOkCEGJHKATpH1uY2TYX6OamcxmrOp-K0nG1SgVuhJ3bT8RossylRue1ZjyUOKqobaLPCCQA3_yEo3INbgcDo9wrCf0uFniCf54rpcgLBQfe51ABqc3Ha1Oy05xxju9s1gOffUiB18EGdtTC1vJzIzGSkppz8GizKLvTM1VFrPfqZktABBq2vZb-JCHnxZq6RUyU6jiIVasOfk8uYNNy01vbYdBxPty0lwNhU3g3HL3d3wZlwa-mK5zpdv8a9qzcn-Y0pPknCgyAnz9J3d0Qeaor5OS4BqZ7wPYkbbxEFtTWIY9aAa_RB8MJBV8Hz9ioCbzsWkAx_IzqFHNZo2lFrVKsrHd8wUfl3EUE0rIVKUlgyDXVmBv9f68E2bXgbMuIL_2C7AyJde3dqYcvaI0eZI6kwapCtv4-uTsdpbk8WD4j7dSju_ab1g0BfZH7ZniW4mquB8BZtPXRBbzv-B1B7J53L_hId22uLZ5IpR_JfxC8or6CX7vMU1VMg1EvAZ097umXG1bGUIjNChNiak77hbvSHDVYzAzMVNwnAbk9T5eBfTG1KO9jJ28H_UADqhV_5v3pnRMa-KWGSGi4gCQNrEU_QNBaNl4yns-wwCf7P96pErePsSbReQjPogkTG8onoCj_41r0Kzh5EeTJ_BXtWF3s69msY12KK1nj8XSfXosaFjxFn0UAbQuLlNrdcYXaDjSX_iDVsXNGF1K7rQMgT0euBckpAv5jz_pFBRAyehER0siCN6uH2aAcxKqVcgK08VrhbLVqHRkwsyTbU6LJcf5cFbwHeYs_ieUuAZ0m3-mZH5R_4aC8PtQuy_xw2NMHr2wFDYNqNtV4HwhnmzeoN9AT6vXgDag-mYmQZOkuQJxifziUdSQ3UAmPcqUgQWh0F4vZXiKA7xD4lnifN6XonR7EyertziNcOuZo0DWT8wD_z70PyNm6fBVW69eKkYqUp0tBmIHG-H7Iyp56-TnnsV3e3Y6omHamhPsZUcPo-CIxmqM4Qlryd1XuOITq46gSV4D4itNwPi_VtDDb4_dpD18kQ0OenksL3LEh_zJUYPg3C5OjDD-hvPTWAKZLPxX7t7L8_CN_I-9mSj5AfLDkHmz6Nf5q214gdwv7CKSnvadTTzbx3OlHUU5msnv8OX7vZrT2lYCtkiufRefI_it0b3IbN_hGLBocaH3WvDYvGxTSSehbWLtCPIbtc7itEEhT2Q9I2t6A6wfsfHkLzboQr-KuiVO7ErL-GQDfmL51dLMNQkXpS-JNegeZ0jp-IP4Lbte9ihfhHahVXq54cP_ZpwrNiACFOVPRY
+│ 
+│   with aws_instance.ubuntu_server,
+│   on C_UbuntuServer.tf line 1, in resource "aws_instance" "ubuntu_server":
+│    1: resource "aws_instance" "ubuntu_server" {
+│ 

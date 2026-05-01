@@ -1,0 +1,23 @@
+---
+- name: User Account Automation - Task E
+  hosts: all
+  become: yes
+  tasks:
+    - name: Create the AdminWGU user
+      user:
+        name: AdminWGU
+        groups: "{{ 'sudo' if ansible_os_family == 'Debian' else 'wheel' }}"
+        append: yes
+        state: present
+        shell: /bin/bash
+
+    - name: Set password for AdminWGU
+      shell: echo "AdminWGU:WGU123" | chpasswd
+
+    - name: Ensure AdminWGU has root-level sudo access
+      lineinfile:
+        path: /etc/sudoers
+        state: present
+        regexp: '^AdminWGU'
+        line: 'AdminWGU ALL=(ALL) NOPASSWD:ALL'
+        validate: 'visudo -cf %s'

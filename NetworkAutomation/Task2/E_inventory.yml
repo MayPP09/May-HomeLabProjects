@@ -1,0 +1,13 @@
+all:
+  hosts:
+    ubuntu_server:
+      ansible_host: 52.36.95.44
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: /home/student/WGU/proj1/d417-network-automation-and-deployment/012334391_D417_2/201152448000.pem
+      ansible_python_interpreter: /usr/bin/python3
+    redhat_server:
+      ansible_host: 16.146.87.212
+      ansible_user: ec2-user
+      ansible_ssh_private_key_file: /home/student/WGU/proj1/d417-network-automation-and-deployment/012334391_D417_2/201152448000.pem
+      ansible_python_interpreter: /usr/bin/python3
+      

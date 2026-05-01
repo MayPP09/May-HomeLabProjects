@@ -1,0 +1,21 @@
+PLAY [User Account Automation - Task E] ****************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [redhat_server]
+ok: [ubuntu_server]
+
+TASK [Create the AdminWGU user] ************************************************
+changed: [ubuntu_server]
+changed: [redhat_server]
+
+TASK [Set password for AdminWGU] ***********************************************
+changed: [ubuntu_server]
+changed: [redhat_server]
+
+TASK [Ensure AdminWGU has root-level sudo access] ******************************
+changed: [ubuntu_server]
+changed: [redhat_server]
+
+PLAY RECAP *********************************************************************
+redhat_server              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+ubuntu_server              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

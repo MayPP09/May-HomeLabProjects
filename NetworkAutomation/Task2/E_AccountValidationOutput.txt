@@ -1,0 +1,76 @@
+##For ubuntu_server
+student@ip-10-0-30-151:~/WGU/proj1/d417-network-automation-and-deployment/012334391_D417_2$ ssh AdminWGU@52.36.95.44
+AdminWGU@52.36.95.44: Permission denied (publickey).
+student@ip-10-0-30-151:~/WGU/proj1/d417-network-automation-and-deployment/012334391_D417_2$ ssh -i 201152448000.pem ubuntu@52.36.95.44
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1018-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Apr 30 15:23:55 UTC 2026
+
+  System load:  0.0               Processes:             109
+  Usage of /:   26.7% of 6.71GB   Users logged in:       0
+  Memory usage: 20%               IPv4 address for enX0: 172.31.12.11
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Thu Apr 30 15:16:27 2026 from 35.90.98.202
+ubuntu@ip-172-31-12-11:~$ su - AdminWGU
+Password: 
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+AdminWGU@ip-172-31-12-11:~$ pwd
+/home/AdminWGU
+AdminWGU@ip-172-31-12-11:~$ whoami
+AdminWGU
+AdminWGU@ip-172-31-12-11:~$ sudo whoami
+root
+AdminWGU@ip-172-31-12-11:~$ exit
+logout
+ubuntu@ip-172-31-12-11:~$ exit
+logout
+Connection to 52.36.95.44 closed.
+
+
+
+##For redhat_server
+student@ip-10-0-30-151:~/WGU/proj1/d417-network-automation-and-deployment/012334391_D417_2$ ssh -i 201152448000.pem ec2-user@16.146.87.212
+Register this system with Red Hat Insights: rhc connect
+
+Example:
+# rhc connect --activation-key <key> --organization <org>
+
+The rhc client and Red Hat Insights will enable analytics and additional
+management capabilities on your system.
+View your connected systems at https://console.redhat.com/insights
+
+You can learn more about how to register your system 
+using rhc at https://red.ht/registration
+Last login: Thu Apr 30 15:16:27 2026 from 35.90.98.202
+[ec2-user@ip-172-31-9-48 ~]$ su - AdminWGU
+Password: 
+[AdminWGU@ip-172-31-9-48 ~]$ pwd
+/home/AdminWGU
+[AdminWGU@ip-172-31-9-48 ~]$ whoami
+AdminWGU
+[AdminWGU@ip-172-31-9-48 ~]$ sudo whoami
+root
+[AdminWGU@ip-172-31-9-48 ~]$ exit
+logout
+[ec2-user@ip-172-31-9-48 ~]$ exit
+logout
+Connection to 16.146.87.212 closed.
